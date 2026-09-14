@@ -1,0 +1,15 @@
+{
+  "name": "claude-review",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "biome check .",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest"
+  },
+  "trustedDependencies": ["@biomejs/biome"]
+}
