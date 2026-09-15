@@ -113,7 +113,7 @@ jobs:
         if: always()
         shell: bash
         env:
-          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
           REVIEW_MARKER: "Claude review: head=${{ env.REVIEW_HEAD }} run=${{ github.run_id }} attempt=${{ github.run_attempt }}"
           REVIEW_OUTPUT: ${{ steps.claude-review.outputs.structured_output }}
         run: bun "${{ github.workspace }}/.claude-review/bin/claude-review-comment.ts" check
