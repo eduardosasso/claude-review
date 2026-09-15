@@ -41,3 +41,8 @@ prompt. `runs_on` (optional, default `self-hosted` + `omarchy`) sets the
 runner labels as a JSON array. `allowed_bots` (optional, default
 `merv-app,claude,github-actions`) is a comma-separated list of bot accounts
 the review action will also treat as pull request authors/pushers.
+
+## Requirements
+
+The workflow installs its own `bun` via `setup-bun`; the runner only needs
+git, curl, and a Linux runner.
