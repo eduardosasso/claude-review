@@ -42,6 +42,9 @@ runner labels as a JSON array. `allowed_bots` (optional, default
 `merv-app,claude,github-actions`) is a comma-separated list of bot accounts
 the review action will also treat as pull request authors/pushers.
 
+Draft pull requests are skipped. The caller's `ready_for_review` trigger
+runs the review once the pull request leaves draft.
+
 ## Requirements
 
 The workflow installs its own `bun` via `setup-bun`; the runner only needs
